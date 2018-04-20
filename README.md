@@ -15,8 +15,30 @@ Package information: [![Python 2.7](https://img.shields.io/badge/python-2.7-blue
 
 [![Join the chat at https://gitter.im/EpistasisLab/tpot](https://badges.gitter.im/EpistasisLab/tpot.svg)](https://gitter.im/EpistasisLab/tpot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## Support for convolutional networks and recurrent networks on the way - using Keras 
+## Support for Keras soon. w/ TensorFlow, Theano, or CNTK Backends  
+TPOT has been so sucessfull in helping define scikit-learn Classification and Regression pipelines, I thought I'd use it as a base for an Auto ML engine for Keras and Distibuted Keras. 
 
+Soon.. and well, TODO:
+
+1) Automate Keras sequential model definitions. 
+2) convolution and recurrent model suported 
+3) Reproduceable results. During development of a model, sometimes it is useful to be able to obtain reproducible results from run to run in order to determine if a change in performance is due to an actual model or data modification, or merely a result of a new random sample. Keras w. TensorFlow as a backend allows for this. 
+4) Scikit-learn pipelines still suported. i.e., TPOTClassifier and TPOTRegresser - Keras can wrap scikit-learn if you want keras.wrappers.scikit_learn.KerasClassifier(build_fn=None, sk_params), which implements the Scikit-Learn classifier interface
+keras.wrappers.scikit_learn.KerasRegressor(build_fn=None, sk_params), which implements the Scikit-Learn regressor interface.
+5) Genetic Algo's to define complex ml models, such as multi-output models, directed acyclic graphs, or models with shared layers via Kearas Funtional API 
+6) Multi GPU an distributed processing using https://github.com/cerndb/dist-keras . 
+
+Why Keras? Why not!
+
+Turn your models into products (from Keras' site)  
+-On iOS, via Apple’s CoreML (Keras support officially provided by Apple)  
+-On Android, via the TensorFlow Android runtime. Example: Not Hotdog app  
+-In the browser, via GPU-accelerated JavaScript runtimes such as Keras.js and WebDNN  
+-On Google Cloud, via TensorFlow-Serving  
+-In a Python webapp backend (such as a Flask app)  
+-On the JVM, via DL4J model import provided by SkyMind  
+-On Raspberry Pi  
+ 
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/EpistasisLab/tpot/master/images/tpot-logo.jpg" width=300 />
