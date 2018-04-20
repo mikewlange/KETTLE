@@ -20,7 +20,7 @@ TPOT has been so sucessfull in helping define scikit-learn Classification and Re
 
 Soon.. and well, TODO:
 
-1) Automate Keras sequential model definitions via GA and EA algos.  
+1) Automate Keras sequential model definitions via Genetic and Evolutionary algos.  
 2) convolution and recurrent model suported 
 3) Reproduceable results. During development of a model, sometimes it is useful to be able to obtain reproducible results from run to run in order to determine if a change in performance is due to an actual model or data modification, or merely a result of a new random sample. Keras w. TensorFlow as a backend allows for this. 
 4) Scikit-learn pipelines still suported. i.e., TPOTClassifier and TPOTRegresser - Keras can wrap scikit-learn if you want keras.wrappers.scikit_learn.KerasClassifier(build_fn=None, sk_params), which implements the Scikit-Learn classifier interface
