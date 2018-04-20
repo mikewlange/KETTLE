@@ -15,7 +15,7 @@ Package information: [![Python 2.7](https://img.shields.io/badge/python-2.7-blue
 
 [![Join the chat at https://gitter.im/EpistasisLab/tpot](https://badges.gitter.im/EpistasisLab/tpot.svg)](https://gitter.im/EpistasisLab/tpot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-### Support for convolutional networks and recurrent networks (and any combo) soon using Keras 
+## Support for convolutional networks and recurrent networks on the way - using Keras 
 
 
 <p align="center">
@@ -59,6 +59,9 @@ TPOT can be used [on the command line](http://epistasislab.github.io/tpot/using/
 Click on the corresponding links to find more information on TPOT usage in the documentation.
 
 ## Examples
+
+### Deep Leaning
+Keras support on the way. 
 
 ### Classification
 
